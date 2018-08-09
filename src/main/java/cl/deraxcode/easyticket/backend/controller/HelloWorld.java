@@ -3,11 +3,11 @@ package cl.deraxcode.easyticket.backend.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/hello")
+@RestController
 public class HelloWorld {
 	
 	
-	@GetMapping
+	@GetMapping("/hello")
 	public String hello() {
 		return "Hello World!";
 	}
