@@ -8,5 +8,6 @@ import cl.deraxcode.easyticket.backend.domain.Commune;
 
 public interface CommuneRepository extends JpaRepository<Commune, Long>{
 	List<Commune> findByProvinceProvinceId(Long provinceId);	
+	List<Commune> findByProvinceRegionRegionId(Long regionId);
 
 }

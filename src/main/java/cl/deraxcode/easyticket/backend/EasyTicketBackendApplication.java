@@ -9,4 +9,6 @@ public class EasyTicketBackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EasyTicketBackendApplication.class, args);
 	}
+	
+	
 }

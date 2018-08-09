@@ -12,20 +12,21 @@ import org.springframework.web.bind.annotation.RestController;
 import cl.deraxcode.easyticket.backend.domain.UserHost;
 import cl.deraxcode.easyticket.backend.repository.UserHostRepository;
 
-@RestController("/users")
+@RestController
 public class UserHostController {
 	
 	@Autowired
 	private UserHostRepository userHostRepository;
 	
-	
-	@GetMapping
+ 	@GetMapping("/users")
 	public List<UserHost> findAll() {
 		return userHostRepository.findAll();
 	}
 	
-	@PostMapping
+	@PostMapping("/users")
 	public UserHost save(@Valid UserHost userHost) {
+		
+		
 		return userHostRepository.save(userHost);
 	}
 	
